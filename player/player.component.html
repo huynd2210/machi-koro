@@ -1,0 +1,18 @@
+<span [ngStyle]="{'color': isUser?'green':'red'}">
+  player {{id}} <br>
+  coins: {{player.coins}} <br>
+  project cards:
+  <span *ngFor="let projectCard of player.projectCards">
+    <app-card [card]="projectCard" [player]="id"></app-card>
+  </span>
+  <br>
+  cards:
+  <span *ngFor="let card of player.handCards">
+    <app-card [card]="card" [player]="id"></app-card>
+  </span>
+  <span *ngIf="isActive">
+    <button (click)="roll1Dice()">Roll</button>
+  </span>
+
+</span>
+

@@ -1,0 +1,6 @@
+<img [src]="card.image" style="width:120px" [alt]="card.name">
+
+<div *ngIf="!player">
+  <button type="button" (click)="buyFunction(player, card)">Buy </button>
+  Amount: {{amount}}
+</div>

@@ -1,0 +1,24 @@
+<span>
+  <span *ngFor="let cardDisplay of cardDisplay">
+        <app-card [card]="cardDisplay" [amount]="getRemainingAmount(cardDisplay)"></app-card>
+  </span>
+  <br>
+  <span>
+    Wheat Field: {{remainingWheatField}}
+    Bakery: {{remainingBakery }}
+    Ranch: {{remainingRanch}}
+    Forest: {{remainingForest}}
+    Mine: {{remainingMine}}
+    Apple Orchard: {{remainingAppleOrchard}}
+    Convenience Store: {{remainingConvenienceStore}}
+    Cheese Factory: {{remainingCheeseFactory}}
+    Furniture Factory: {{remainingFurnitureFactory}}
+    FruitVegMarket: {{remainingFruitVegMarket}}
+    Cafe: {{remainingCafe}}
+    Family Restaurant: {{remainingFamilyRestaurant}}
+    Stadium: {{remainingStadium}}
+    TV Station: {{remainingTVStation}}
+    Business Center: {{remainingBusinessCenter}}
+  </span>
+
+</span>
